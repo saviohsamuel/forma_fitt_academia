@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página inicial</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bruno+Ace&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Logo Forma Fitt Academia" class="logo__img">
+                <h2>Forma Fitt <br><strong class="logo-destaque">Academia</strong></h2>
+            </div>
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="menu__hamburguer"></span>
+            </label>
+            <nav class="nav__menu">
+                <ul class="nav__lista">
+                    <li><a href="#sobre" class="nav__link">Sobre nós</a></li>
+                    <li><a href="#planos" class="nav__link">Planos</a></li>
+                    <li><a href="#treinadores" class="nav__link">Treinadores</a></li>
+                    <li><a href="#endereco" class="nav__link">Endereço</a></li>
+                    <li><a href="#contatos" class="nav__link">Contatos</a></li>
+                </ul>
+            </nav>
+            <ul class="media__opcoes"><!--opcoes tablet e desktop-->
+                <li><a href="#planos" class="opcoes__link">Planos</a></li>
+                <li><a href="#treinadores" class="opcoes__link">Treinadores</a></li>
+                <li><a href="#endereco" class="opcoes__link">Endereço</a></li>
+                <li><a href="#contatos" class="opcoes__link">Contatos</a></li>
+            </ul>
+        </header>
+        <section class="container__home">
+            <h1><strong class="home-destaque">Não faça pausa,</strong><br>sua melhor forma espera por você!</h1>
+            <p>Lorem ipsum, lorem lorem lorem.</p>
+            <a href="#" class="botao">Voltar a treinar!</a>
+        </section>
+        <section class="container" id="sobre">
+            <h2 class="subtitulo">Sobre nós</h2>
+            <p class="sobre__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet eaque ipsum iste autem eum dicta vitae impedit dolore tenetur soluta eos est a voluptatibus atque doloribus, consectetur reprehenderit laborum explicabo.</p>
+            <p class="sobre__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum aperiam ea debitis minus obcaecati perspiciatis repellendus consequuntur consequatur ducimus, saepe, nostrum voluptate blanditiis! Quaerat laboriosam vitae reiciendis voluptate culpa obcaecati.</p>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/sobre-img01.png" alt="Foto dos equipamentos de musculação" class="sobre__img"></div>
+                    <div class="swiper-slide"><img src="img/sobre-img02.png" alt="Foto dos equipamentos de musculação" class="sobre__img"></div>
+                    <div class="swiper-slide"><img src="img/sobre-img03.png" alt="Foto dos equipamentos de musculação" class="sobre__img"></div>
+                    <div class="swiper-slide"><img src="img/sobre-img04.png" alt="Foto dos equipamentos de musculação" class="sobre__img"></div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="media__sobre"><!--imagens media-->
+                <img src="img/sobre-img01.png" alt="Foto dos equipamentos de musculação" class="media__img">
+                <img src="img/sobre-img02.png" alt="Foto dos equipamentos de musculação" class="media__img">
+                <img src="img/sobre-img03.png" alt="Foto dos equipamentos de musculação" class="media__img">
+                <img src="img/sobre-img04.png" alt="Foto dos equipamentos de musculação" class="media__img">
+            </div>
+            <h3 class="subtitulo">Horário de funcionamento</h3>
+            <ul class="horarios__lista">
+                <li class="horario__item">
+                    <img src="img/horario.svg" alt="Icone de relógio">
+                    Segunda à sexta <br>
+                    05h às 23h
+                </li>
+                <li class="horario__item">
+                    <img src="img/horario.svg" alt="Icone de relógio">
+                    Sábados <br>
+                    07h às 17h
+                </li>
+                <li class="horario__item">
+                    <img src="img/horario.svg" alt="Icone de relógio">
+                    Domingos <br>
+                    07h às 12h
+                </li>
+            </ul>            
+        </section>
+        <section class="container" id="planos">
+            <h2 class="subtitulo">Planos</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="container__card">
+                            <div class="card__info">
+                                <h3 class="card__plano">Básico</h3>
+                                <p class="card__valor">R$ 60,00 (Mensal)</p>
+                            </div>
+                            <ul class="card__lista">
+                                <li class="lista__item">
+                                    <img src="img/OK.svg" alt="Icone OK">
+                                    <p>Esteira e bicicleta;</p>
+                                </li>
+                                <li class="lista__item">
+                                    <img src="img/OK.svg" alt="Icone OK">
+                                    <p>Avaliação fisica;</p>
+                                </li>
+                                <li class="lista__item">
+                                    <img src="img/OK.svg" alt="Icone OK">
+                                    <p>Acompanhamento treinador;</p>
+                                </li>
+                                <li class="lista__item">
+                                    <img src="img/OK.svg" alt="Icone OK">
+                                    <p>Acesso: 12h às 14h</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="plano__botao">Contratar</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container__card">
+                            <div class="card__info">
+                                <h3 class="card__plano">Intermediario</h3>
+                                <p class="card__valor">R$ 70,00 (Mensal)</p>
+                            </div>
+                            <ul class="card__lista">
+                                <li class="lista__item">
+                                    <img src="img/OK.svg" alt="Icone OK">
+                                    <p>Esteira e bicicleta;</p>
+                                </li>
+                                <li class="lista__item">
+                                    <img src="img/OK.svg" alt="Icone OK">
+                                    <p>Avaliação fisica;</p>
+                                </li>
+                                <li class="lista__item">
+                                    <img src="img/OK.svg" alt="Icone OK">
+                                    <p>Acompanhamento treinador;</p>
+                                </li>
+                                <li class="lista__item">
+                                    <img src="img/OK.svg" alt="Icone OK">
+                                    <p>Acesso: Livre</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="plano__botao">Contratar</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container__card">
+                            <div class="card__info">
+                                <h3 class="card__plano">2 Modalidades</h3>
+                                <p class="card__valor">R$ 85,00 (Mensal)</p>
+                            </div>
+                            <ul class="card__lista">
+                                <li class="lista__item">
+                                    <img src="img/OK.svg" alt="Icone OK">
+                                    <p>2 modalidades de sua escolha;</p>
+                                </li>
+                                <li class="lista__item">
+                                    <img src="img/OK.svg" alt="Icone OK">
+                                    <p>Modalidades: Muay thai, funcional, fitdance, Ginástica, forró, ritbox e musculação;</p>
+                                </li>
+                                <li class="lista__item">
+                                    <img src="img/OK.svg" alt="Icone OK">
+                                    <p>Acesso: Todos horários das modalidades escolhidas</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="plano__botao">Contratar</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container__card">
+                            <div class="card__info">
+                                <h3 class="card__plano">Pacote total</h3>
+                                <p class="card__valor">R$ 95,00 (Mensal)</p>
+                            </div>
+                            <ul class="card__lista">
+                                <li class="lista__item">
+                                    <img src="img/OK.svg" alt="Icone OK">
+                                    <p>Todas as modalidades;</p>
+                                </li>
+                                <li class="lista__item">
+                                    <img src="img/OK.svg" alt="Icone OK">
+                                    <p>Modalidades: Muay thai, funcional, fitdance, Ginastica, forró, ritbox e musculação;</p>
+                                </li>
+                                <li class="lista__item">
+                                    <img src="img/OK.svg" alt="Icone OK">
+                                    <p>Ficha de treino personalizada;</p>
+                                </li>
+                                <li class="lista__item">
+                                    <img src="img/OK.svg" alt="Icone OK">
+                                    <p>Acesso: qualquer horário</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="plano__botao">Contratar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            
+            <div class="media__card"> <!--card media-->
+                <div class="container__card">
+                    <div class="card__info">
+                        <h3 class="card__plano">Básico</h3>
+                        <p class="card__valor">R$ 60,00 (Mensal)</p>
+                    </div>
+                    <ul class="card__lista">
+                        <li class="lista__item">
+                            <img src="img/OK.svg" alt="Icone OK">
+                            <p>Esteira e bicicleta;</p>
+                        </li>
+                        <li class="lista__item">
+                            <img src="img/OK.svg" alt="Icone OK">
+                            <p>Avaliação fisica;</p>
+                        </li>
+                        <li class="lista__item">
+                            <img src="img/OK.svg" alt="Icone OK">
+                            <p>Acompanhamento treinador;</p>
+                        </li>
+                        <li class="lista__item">
+                            <img src="img/OK.svg" alt="Icone OK">
+                            <p>Acesso: 12h às 14h</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="plano__botao">Contratar</a>
+                </div>
+                <div class="container__card">
+                    <div class="card__info">
+                        <h3 class="card__plano">Intermediario</h3>
+                        <p class="card__valor">R$ 70,00 (Mensal)</p>
+                    </div>
+                    <ul class="card__lista">
+                        <li class="lista__item">
+                            <img src="img/OK.svg" alt="Icone OK">
+                            <p>Esteira e bicicleta;</p>
+                        </li>
+                        <li class="lista__item">
+                            <img src="img/OK.svg" alt="Icone OK">
+                            <p>Avaliação fisica;</p>
+                        </li>
+                        <li class="lista__item">
+                            <img src="img/OK.svg" alt="Icone OK">
+                            <p>Acompanhamento treinador;</p>
+                        </li>
+                        <li class="lista__item">
+                            <img src="img/OK.svg" alt="Icone OK">
+                            <p>Acesso: Livre</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="plano__botao">Contratar</a>
+                </div>
+                <div class="container__card">
+                    <div class="card__info">
+                        <h3 class="card__plano">2 Modalidades</h3>
+                        <p class="card__valor">R$ 85,00 (Mensal)</p>
+                    </div>
+                    <ul class="card__lista">
+                        <li class="lista__item">
+                            <img src="img/OK.svg" alt="Icone OK">
+                            <p>2 modalidades de sua escolha;</p>
+                        </li>
+                        <li class="lista__item">
+                            <img src="img/OK.svg" alt="Icone OK">
+                            <p>Modalidades: Muay thai, funcional, fitdance, Ginástica, forró, ritbox e musculação;</p>
+                        </li>
+                        <li class="lista__item">
+                            <img src="img/OK.svg" alt="Icone OK">
+                            <p>Acesso: Todos horários das modalidades escolhidas</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="plano__botao">Contratar</a>
+                </div>
+                <div class="container__card">
+                    <div class="card__info">
+                        <h3 class="card__plano">Pacote total</h3>
+                        <p class="card__valor">R$ 95,00 (Mensal)</p>
+                    </div>
+                    <ul class="card__lista">
+                        <li class="lista__item">
+                            <img src="img/OK.svg" alt="Icone OK">
+                            <p>Todas as modalidades;</p>
+                        </li>
+                        <li class="lista__item">
+                            <img src="img/OK.svg" alt="Icone OK">
+                            <p>Modalidades: Muay thai, funcional, fitdance, Ginastica, forró, ritbox e musculação;</p>
+                        </li>
+                        <li class="lista__item">
+                            <img src="img/OK.svg" alt="Icone OK">
+                            <p>Ficha de treino personalizada;</p>
+                        </li>
+                        <li class="lista__item">
+                            <img src="img/OK.svg" alt="Icone OK">
+                            <p>Acesso: qualquer horário</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="plano__botao">Contratar</a>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="treinadores">
+            <h2 class="subtitulo">Treinadores</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <figure class="card_treinadores">
+                            <img src="img/Hugo Tomás.png" alt="Treinador" class="card__treinador-img">
+                            <figcaption>Hugo Tomás</figcaption>
+                            <ul>
+                                <li><a href="#"><img src="img/instagram.svg" alt="Icone Instagram" class="treinadores__redes"></a></li>
+                                <li><a href="#"><img src="img/twitter.svg" alt="Icone Twitter" class="treinadores__redes"></a></li>
+                                <li><a href="#"><img src="img/youtube.svg" alt="Icone YouTube" class="treinadores__redes"></a></li>
+                            </ul>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="card_treinadores">
+                            <img src="img/Sophia Sarah.png" alt="Treinador" class="card__treinador-img">
+                            <figcaption>Sophia Sarah</figcaption>
+                            <ul>
+                                <li><a href="#"><img src="img/instagram.svg" alt="Icone Instagram" class="treinadores__redes"></a></li>
+                                <li><a href="#"><img src="img/twitter.svg" alt="Icone Twitter" class="treinadores__redes"></a></li>
+                                <li><a href="#"><img src="img/youtube.svg" alt="Icone YouTube" class="treinadores__redes"></a></li>
+                            </ul>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="card_treinadores">
+                            <img src="img/Yasmin Lopes.png" alt="Treinador" class="card__treinador-img">
+                            <figcaption>Yasmin Lopes</figcaption>
+                            <ul>
+                                <li><a href="#"><img src="img/instagram.svg" alt="Icone Instagram" class="treinadores__redes"></a></li>
+                                <li><a href="#"><img src="img/twitter.svg" alt="Icone Twitter" class="treinadores__redes"></a></li>
+                                <li><a href="#"><img src="img/youtube.svg" alt="Icone YouTube" class="treinadores__redes"></a></li>
+                            </ul>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="card_treinadores">
+                            <img src="img/Carla Bruna.png" alt="Treinador" class="card__treinador-img">
+                            <figcaption>Carla Bruna</figcaption>
+                            <ul>
+                                <li><a href="#"><img src="img/instagram.svg" alt="Icone Instagram" class="treinadores__redes"></a></li>
+                                <li><a href="#"><img src="img/twitter.svg" alt="Icone Twitter" class="treinadores__redes"></a></li>
+                                <li><a href="#"><img src="img/youtube.svg" alt="Icone YouTube" class="treinadores__redes"></a></li>
+                            </ul>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="card_treinadores">
+                            <img src="img/Rafael Manoel.png" alt="Treinador" class="card__treinador-img">
+                            <figcaption>Rafael Manoel</figcaption>
+                            <ul>
+                                <li><a href="#"><img src="img/instagram.svg" alt="Icone Instagram" class="treinadores__redes"></a></li>
+                                <li><a href="#"><img src="img/twitter.svg" alt="Icone Twitter" class="treinadores__redes"></a></li>
+                                <li><a href="#"><img src="img/youtube.svg" alt="Icone YouTube" class="treinadores__redes"></a></li>
+                            </ul>
+                        </figure>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <figure class="card_treinadores">
+                            <img src="img/Sérgio Julio.png" alt="Treinador" class="card__treinador-img">
+                            <figcaption>Sérgio Julio</figcaption>
+                            <ul>
+                                <li><a href="#"><img src="img/instagram.svg" alt="Icone Instagram" class="treinadores__redes"></a></li>
+                                <li><a href="#"><img src="img/twitter.svg" alt="Icone Twitter" class="treinadores__redes"></a></li>
+                                <li><a href="#"><img src="img/youtube.svg" alt="Icone YouTube" class="treinadores__redes"></a></li>
+                            </ul>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="card_treinadores">
+                            <img src="img/Stella Sophie.png" alt="Treinador" class="card__treinador-img">
+                            <figcaption>Stella Sophie</figcaption>
+                            <ul>
+                                <li><a href="#"><img src="img/instagram.svg" alt="Icone Instagram" class="treinadores__redes"></a></li>
+                                <li><a href="#"><img src="img/twitter.svg" alt="Icone Twitter" class="treinadores__redes"></a></li>
+                                <li><a href="#"><img src="img/youtube.svg" alt="Icone YouTube" class="treinadores__redes"></a></li>
+                            </ul>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="card_treinadores">
+                            <img src="img/Ivan Tavares.png" alt="Treinador" class="card__treinador-img">
+                            <figcaption>Ivan Tavares</figcaption>
+                            <ul>
+                                <li><a href="#"><img src="img/instagram.svg" alt="Icone Instagram" class="treinadores__redes"></a></li>
+                                <li><a href="#"><img src="img/twitter.svg" alt="Icone Twitter" class="treinadores__redes"></a></li>
+                                <li><a href="#"><img src="img/youtube.svg" alt="Icone YouTube" class="treinadores__redes"></a></li>
+                            </ul>
+                        </figure>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>            
+            <div class="media__treinadores">
+                <figure class="card_treinadores">
+                    <img src="img/Hugo Tomás.png" alt="Treinador" class="card__treinador-img">
+                    <figcaption>Hugo Tomás</figcaption>
+                    <ul>
+                        <li><a href="#"><img src="img/instagram.svg" alt="Icone Instagram" class="treinadores__redes"></a></li>
+                        <li><a href="#"><img src="img/twitter.svg" alt="Icone Twitter" class="treinadores__redes"></a></li>
+                        <li><a href="#"><img src="img/youtube.svg" alt="Icone YouTube" class="treinadores__redes"></a></li>
+                    </ul>
+                </figure>
+                <figure class="card_treinadores">
+                    <img src="img/Sophia Sarah.png" alt="Treinador" class="card__treinador-img">
+                    <figcaption>Sophia Sarah</figcaption>
+                    <ul>
+                        <li><a href="#"><img src="img/instagram.svg" alt="Icone Instagram" class="treinadores__redes"></a></li>
+                        <li><a href="#"><img src="img/twitter.svg" alt="Icone Twitter" class="treinadores__redes"></a></li>
+                        <li><a href="#"><img src="img/youtube.svg" alt="Icone YouTube" class="treinadores__redes"></a></li>
+                    </ul>
+                </figure>
+                <figure class="card_treinadores">
+                    <img src="img/Yasmin Lopes.png" alt="Treinador" class="card__treinador-img">
+                    <figcaption>Yasmin Lopes</figcaption>
+                    <ul>
+                        <li><a href="#"><img src="img/instagram.svg" alt="Icone Instagram" class="treinadores__redes"></a></li>
+                        <li><a href="#"><img src="img/twitter.svg" alt="Icone Twitter" class="treinadores__redes"></a></li>
+                        <li><a href="#"><img src="img/youtube.svg" alt="Icone YouTube" class="treinadores__redes"></a></li>
+                    </ul>
+                </figure>
+                <figure class="card_treinadores">
+                    <img src="img/Carla Bruna.png" alt="Treinador" class="card__treinador-img">
+                    <figcaption>Carla Bruna</figcaption>
+                    <ul>
+                        <li><a href="#"><img src="img/instagram.svg" alt="Icone Instagram" class="treinadores__redes"></a></li>
+                        <li><a href="#"><img src="img/twitter.svg" alt="Icone Twitter" class="treinadores__redes"></a></li>
+                        <li><a href="#"><img src="img/youtube.svg" alt="Icone YouTube" class="treinadores__redes"></a></li>
+                    </ul>
+                </figure>
+                <figure class="card_treinadores">
+                    <img src="img/Rafael Manoel.png" alt="Treinador" class="card__treinador-img">
+                    <figcaption>Rafael Manoel</figcaption>
+                    <ul>
+                        <li><a href="#"><img src="img/instagram.svg" alt="Icone Instagram" class="treinadores__redes"></a></li>
+                        <li><a href="#"><img src="img/twitter.svg" alt="Icone Twitter" class="treinadores__redes"></a></li>
+                        <li><a href="#"><img src="img/youtube.svg" alt="Icone YouTube" class="treinadores__redes"></a></li>
+                    </ul>
+                </figure>
+
+                <figure class="card_treinadores">
+                    <img src="img/Sérgio Julio.png" alt="Treinador" class="card__treinador-img">
+                    <figcaption>Sérgio Julio</figcaption>
+                    <ul>
+                        <li><a href="#"><img src="img/instagram.svg" alt="Icone Instagram" class="treinadores__redes"></a></li>
+                        <li><a href="#"><img src="img/twitter.svg" alt="Icone Twitter" class="treinadores__redes"></a></li>
+                        <li><a href="#"><img src="img/youtube.svg" alt="Icone YouTube" class="treinadores__redes"></a></li>
+                    </ul>
+                </figure>
+                <figure class="card_treinadores">
+                    <img src="img/Stella Sophie.png" alt="Treinador" class="card__treinador-img">
+                    <figcaption>Stella Sophie</figcaption>
+                    <ul>
+                        <li><a href="#"><img src="img/instagram.svg" alt="Icone Instagram" class="treinadores__redes"></a></li>
+                        <li><a href="#"><img src="img/twitter.svg" alt="Icone Twitter" class="treinadores__redes"></a></li>
+                        <li><a href="#"><img src="img/youtube.svg" alt="Icone YouTube" class="treinadores__redes"></a></li>
+                    </ul>
+                </figure>
+                <figure class="card_treinadores">
+                    <img src="img/Ivan Tavares.png" alt="Treinador" class="card__treinador-img">
+                    <figcaption>Ivan Tavares</figcaption>
+                    <ul>
+                        <li><a href="#"><img src="img/instagram.svg" alt="Icone Instagram" class="treinadores__redes"></a></li>
+                        <li><a href="#"><img src="img/twitter.svg" alt="Icone Twitter" class="treinadores__redes"></a></li>
+                        <li><a href="#"><img src="img/youtube.svg" alt="Icone YouTube" class="treinadores__redes"></a></li>
+                    </ul>
+                </figure>                
+            </div>
+        </section>
+        <section class="container media__endereco" id="endereco">            
+                <h2 class="subtitulo">Endereço</h2>
+                <address class="card__endereco">
+                    <p class="endereco">Rua Tulipa - 620<br>
+                        Bairro: Barra do Ceará<br>
+                        Fortaleza/CE
+                    </p><br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.83941025240455!2d-38.58019539553152!3d-3.715866356913348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74a3d50cea333%3A0x99a75ba0720697ce!2sForma%20Fitt%20Academia!5e0!3m2!1spt-BR!2sbr!4v1720628221058!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="card__mapa"></iframe>
+                </addresss>                        
+        </section>
+        <footer class="container rodape" id="contatos">
+           <h2 class="subtitulo">Contatos</h2>
+           <div class="media__rodape">
+                <ul class="contatos__lista">
+                    <li class="contatos__item">
+                        <img src="img/telefone.svg" alt="Icone Telfone">
+                        <a href="#" class="contatos__link">(85) 98233-6718</a>
+                    </li>
+                    <li class="contatos__item">
+                        <img src="img/email.svg" alt="Icone Email">
+                        <a href="#" class="contatos__link">gym24@gmail.com</a>
+                    </li>
+                </ul>
+                <div class="redes-sociais">
+                    <a href="#"><img src="img/instagram.svg" alt="Icone Instagram" class="redes-sociais__img"></a>
+                    <a href="#"><img src="img/facebook.svg" alt="Icone Facebook" class="redes-sociais__img"></a>
+                    <a href="#"><img src="img/twitter.svg" alt="Icone Twitter" class="redes-sociais__img"></a>
+                    <a href="#"><img src="img/youtube.svg" alt="icone YouTube" class="redes-sociais__img"></a>
+                </div>
+            </div> 
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script class="teste">
+            const swiper = new Swiper('.swiper', {
+                slidesPerView: 1,
+                autoplay: {
+                    delay: 2000,
+                }
+            });
+        </script>
+    </body>
+</html>

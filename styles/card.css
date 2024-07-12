@@ -1,0 +1,142 @@
+/*Card planos*/
+.container__card {
+    text-align: start;
+    background: var(--cor-card);
+    border-radius: 15px;
+    height: 360px;
+    width: 90vw;     
+    display: grid;        
+    grid-template-columns: auto;
+    grid-template-rows: 70px 240px 30px;
+}
+
+.container__card > .card__info:nth-child(1) {
+    grid-column: 1/4;
+    grid-row: 1/2       
+}
+
+.container__card > .card__lista:nth-child(2) {
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+.container__card > .plano__botao:nth-child(3) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.card__info {    
+    padding: 1rem;        
+    border-bottom: 1.5px solid var(--cor-fundo);
+    width: 100%;
+}
+
+.card__plano,
+.card__valor {
+    text-align: center;
+    margin-right: 2.1rem;
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.card__valor {
+    font-family: var(--fonte-secundaria);
+}
+
+.card__lista {    
+    margin-left: 10px;
+    padding-top: 20px;    
+}
+
+.lista__item {    
+    display: flex;    
+    align-items: center;
+    gap: 1rem;    
+    padding: 0.5rem;    
+}
+
+.plano__botao {    
+    text-decoration: none;
+    color: var(--cor-fundo);
+    background: var(--cor-destaque);
+    font-family: var(--fonte-principal);
+    padding: 8px 21px;   
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+/*Card treinadores*/
+.card_treinadores { 
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    background: var(--cor-card);
+    border-radius: 15px;
+    padding: 1rem;    
+    height: 360px;
+    width: 80vw;    
+}
+
+.card_treinadores > figcaption {    
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.card_treinadores > ul {
+    display: flex;
+}
+
+
+
+.treinadores__redes {
+    width: 45px;
+    padding: 0.3rem;
+}
+
+.card__treinador-img {
+    width: 230px;
+}
+
+/*Card contatos*/
+.card__endereco {
+    width: 85vw;
+    height: 210px;
+    background: var(--cor-card);
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.endereco {
+    text-align: center;
+}
+
+.card__mapa {
+    border-radius: 15px;
+    width: 85vw;
+    height: 150px;
+    -moz-border-radius: 15px; /* Firefox */  
+    -webkit-border-radius: 15px; /* Safari, Chrome */
+}
+
+/* Media card */
+@media (min-width: 650px) {
+    .container__card {
+        width: 285px;
+    }
+
+    .card_treinadores {
+        width: 286px;        
+    }
+
+    .card__endereco,
+    .card__mapa {
+        width: 650px;
+        height: 520px;
+    }
+
+    .card__mapa {
+        height: 450px;
+    }
+}

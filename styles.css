@@ -1,0 +1,210 @@
+@import url(styles/cabecalho.css);
+@import url(styles/carrosel.css);
+@import url(styles/card.css);
+@import url(styles/media.css);
+
+:root {
+    --fonte-principal: "Archivo Black";
+    --fonte-secundaria: "Bruno Ace";
+    --cor-fundo: #000000;
+    --cor-texto: #FFFFFF;
+    --cor-destaque: #FAFF00;
+    --cor-card: #222222;
+}
+
+body {
+    background: var(--cor-fundo);
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-texto);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container__home {
+    background-image: url("img/home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+.container__home > h1 {
+    padding: 87px 0 90px 15px;
+    text-transform: uppercase;
+    line-height: 2em;
+    font-size: 12px;
+}
+
+.home-destaque {
+    font-weight: 800;
+    color: var(--cor-destaque);
+    font-size: 24px;
+}
+
+.container__home > p,
+.botao {
+    font-size: 12px;
+    padding: 35px 0 24px 15px;
+}
+
+.botao {
+    margin-left: 15px;
+    text-decoration: none;
+    background: var(--cor-destaque);
+    padding: 16px 8px;
+    color: var(--cor-fundo);
+    border-radius: 24px;
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 200px 15px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--fonte-principal);
+    color: var(--cor-destaque);
+    padding: 1rem;
+}
+
+.sobre__texto {
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.sobre__img {
+    width: 95%;
+}
+
+.horario__item {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    padding: 0.5rem;
+    column-gap: 10px;
+}
+
+.rodape {
+    margin-bottom: 70px;    
+}
+
+.contatos__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.contatos__link {
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+.redes-sociais {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.redes-sociais__img {
+    width: 40px;
+}
+
+.media__card {
+    display: none;
+}
+
+.media__sobre {
+    display: none;
+}
+
+
+.media__treinadores {
+    display: none;
+}
+/* Media tablet*/
+@media (min-width: 650px) {                 
+    .container__home > h1 {
+        padding: 200px 0 150px 15px;
+        text-transform: uppercase;
+        line-height: 2em;
+        font-size: 23px;
+    }
+    
+    .home-destaque {
+        font-weight: 800;
+        color: var(--cor-destaque);
+        font-size: 70px;
+    }
+    
+    .container__home > p,
+    .botao {
+        font-size: 24px;
+        padding: 100px 0 24px 15px;
+    }    
+
+    .botao {
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .subtitulo {
+        font-size: 32px;
+    }
+    
+    .horarios__lista {
+        display: flex;
+        justify-content: center;
+    }
+
+    .media__card {        
+        display: block;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;        
+        gap: 2rem;
+    }
+       
+    .swiper {
+        display: none;
+    }
+
+    .media__sobre {
+        display: block;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .media__treinadores {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;        
+        justify-content: center;
+        gap: 2rem;
+    }    
+    
+    .media__endereco {
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .media__rodape {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+}
